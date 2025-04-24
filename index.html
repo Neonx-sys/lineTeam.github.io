@@ -9,24 +9,22 @@
 
         body {
             margin: 0;
-            /* Додаємо ефект анімованого переливання */
-            background: linear-gradient(135deg, #ff0000 0%, #0044ff 100%);
-            background-size: 400% 400%;
-            animation: gradientFlow 12s ease-in-out infinite;
+            /* Простий темний фон */
+            background-color: #222;
             padding: 0;
             font-family: 'Press Start 2P', cursive;
-            background: linear-gradient(135deg, #000000 0%, #393939 100%);
             color: #ffffff;
             min-height: 100vh;
             text-align: center;
         }
+
         header {
-            background: linear-gradient(120deg, #00c6ff 0%, #00ff9d 100%), url('https://i.imgur.com/Ik07Krd.jpg') no-repeat center;
-            background-blend-mode: overlay;
-            background-size: cover;
+            /* Градієнт, як на кнопці */
+            background: linear-gradient(90deg, #00aaff 0%, #19db20 100%);
             padding: 60px 0 40px 0;
             box-shadow: 0 4px 24px rgba(0, 255, 238, 0.345);
         }
+
         header h1 {
             font-size: 2.5rem;
             color: #fff;
@@ -34,20 +32,23 @@
             margin: 0;
             text-shadow: 2px 2px 8px #222, 0 0 12px #10e3ff;
         }
+
         .container {
             max-width: 700px;
             margin: 30px auto;
             padding: 32px 24px;
-            background: rgb(#414345);
+            background: rgb(65, 67, 69); /* Трохи світліший фон для контейнера */
             border-radius: 18px;
             box-shadow: 0 8px 32px rgba(0, 255, 4, 0.384);
         }
+
         .container p {
             font-size: 1.1rem;
             color: #e0e0e0;
             margin-bottom: 32px;
             text-shadow: 2px 2px 4px #00eeff;
         }
+
         .button {
             background: linear-gradient(90deg, #00aaff 0%, #19db20 100%);
             color: white;
@@ -62,20 +63,24 @@
             display: inline-block;
             font-weight: bold;
             letter-spacing: 1px;
-            transition: background 0.3s, transform 0.2 s, box-shadow 0.2s;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
         }
+
         .button:hover {
             background: linear-gradient(90deg, #12ffdb 0%, #00c6ff 100%);
             transform: translateY(-2px) scale(1.04);
             box-shadow: 0 4px 24px rgb(0, 200, 255);
         }
+
         @media (max-width: 600px) {
             header {
                 padding: 32px 0 20px 0;
             }
+
             .container {
                 padding: 16px 8px;
             }
+
             .button {
                 padding: 14px 18px;
                 font-size: 1rem;
