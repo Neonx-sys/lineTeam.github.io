@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            background: linear-gradient(135deg, #0088ff97 0%, #8d01ff 100%);
             min-height: 100vh;
             margin: 0;
             font-family: 'Montserrat', sans-serif;
@@ -27,16 +27,17 @@
         h1 {
             color: #2d3a4b;
             margin-bottom: 18px;
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
         p {
             color: #4a6073;
             margin-bottom: 28px;
             font-size: 1.1rem;
         }
-        .tg-link {
-            display: inline-block;
-            background: #229ED9;
+        .discord-link {
+            display: inline-flex;
+            align-items: center;
+            background: #5865F2;
             color: #fff;
             text-decoration: none;
             padding: 14px 32px;
@@ -44,14 +45,13 @@
             font-size: 1.1rem;
             font-weight: 700;
             transition: background 0.2s;
-            box-shadow: 0 4px 16px rgba(34,158,217,0.08);
+            box-shadow: 0 4px 16px rgba(88, 101, 242, 0.08);
+            gap: 10px;
         }
-        .tg-link:hover {
-            background: #176ca6;
+        .discord-link:hover {
+            background: #4752C4;
         }
-        .tg-icon {
-            vertical-align: middle;
-            margin-right: 8px;
+        .discord-icon {
             width: 22px;
             height: 22px;
         }
@@ -59,14 +59,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Приєднуйтесь до нашої групи!</h1>
-        <p>Залишайтеся на зв'язку та отримуйте останні новини у нашій Telegram-групі.</p>
-        <a class="tg-link" href="https://t.me/+U4WtbrH2HEA3ZTMy" target="_blank">
-            <svg class="tg-icon" viewBox="0 0 240 240" fill="none">
-                <circle cx="120" cy="120" r="120" fill="#229ED9"/>
-                <path d="M175 75L60 120.5L100.5 132.5M175 75L157.5 175L100.5 132.5M175 75L100.5 132.5" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Перейти до групи
+        <h1>Join our discord group!</h1>
+        <p>Stay connected and get the latest news in our Discord group.</p>
+        <a class="discord-link" href="https://discord.com/invite/example" target="_blank">
+            <img class="discord-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+            Join the group
         </a>
     </div>
 </body>
